@@ -5,11 +5,12 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.w3c.dom.Element;
 import org.w3c.dom.Text;
-
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
+
 public class SharelaneTest {
+
 
     @Test
     public void zipCode4Digits() {
@@ -20,7 +21,7 @@ public class SharelaneTest {
         browser.findElement(By.cssSelector("[value=Continue]")).click();
         String error = browser.findElement(By.className("error_message")).getText();
         assertEquals(error, "Oops, error on page. ZIP code should have 5 digits",
-                "Zip Code Error message is not correct");
+        "Zip Code Error message is incorrect");
         browser.quit();
     }
 
@@ -32,7 +33,7 @@ public class SharelaneTest {
         browser.findElement(By.name("zip_code")).sendKeys("12345");
         browser.findElement(By.cssSelector("[value=Continue]")).click();
         boolean isOpened = browser.findElement(By.name("password1")).isDisplayed();
-        assertTrue(isOpened);
+        assertTrue(isOpened, "Sign Up page was not opened);
         browser.quit();
     }
 
@@ -45,8 +46,9 @@ public class SharelaneTest {
         browser.findElement(By.cssSelector("[value=Continue]")).click();
         String error = browser.findElement(By.className("error_message")).getText();
         assertEquals(error, "Oops, error on page. ZIP code should have 5 digits",
-                "Zip Code Error message is not correct");
+        "Zip Code Error message is incorrect");
         browser.quit();
     }
+
 
 }
