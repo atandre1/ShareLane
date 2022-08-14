@@ -6,7 +6,10 @@ import org.testng.annotations.Test;
 import org.w3c.dom.Element;
 import org.w3c.dom.Text;
 
+import static org.testng.Assert.assertEquals;
+
 public class SharelaneTest {
+
 
     @Test
     public void zipCode4Digits() {
@@ -15,8 +18,9 @@ public class SharelaneTest {
         browser.get("https://www.sharelane.com/cgi-bin/register.py");
         browser.findElement(By.name("zip_code")).sendKeys("1234");
         browser.findElement(By.cssSelector("[value=Continue]")).click();
-        String actualResult = browser.findElement(By.className("error_message")).getText();
-        Assert.assertEquals(actualResult, "Oops, error on page. ZIP code should have 5 digits");
+        String error = browser.findElement(By.className("error_message")).getText();
+        assertEquals(error, "Oops, error on page. ZIP code should have 5 digits",
+                "Zip Code Error message is incorrect");
         browser.quit();
     }
 
@@ -27,8 +31,8 @@ public class SharelaneTest {
         browser.get("https://www.sharelane.com/cgi-bin/register.py");
         browser.findElement(By.name("zip_code")).sendKeys("12345");
         browser.findElement(By.cssSelector("[value=Continue]")).click();
-        boolean display = browser.findElement(By.name("password1")).isDisplayed();
-        Assert.assertTrue(display);
+        boolean isOpened = browser.findElement(By.name("password1")).isDisplayed();
+        Assert.assertTrue(isOpened, "Sign Up page was not opened");
         browser.quit();
     }
 
@@ -39,9 +43,11 @@ public class SharelaneTest {
         browser.get("https://www.sharelane.com/cgi-bin/register.py");
         browser.findElement(By.name("zip_code")).sendKeys("123456");
         browser.findElement(By.cssSelector("[value=Continue]")).click();
-        String actualResult = browser.findElement(By.className("error_message")).getText();
-        Assert.assertEquals(actualResult, "Oops, error on page. ZIP code should have 5 digits");
+        String error = browser.findElement(By.className("error_message")).getText();
+        assertEquals(error, "Oops, error on page. ZIP code should have 5 digits",
+                "Zip Code Error message is incorrect");
         browser.quit();
     }
+
 
 }
