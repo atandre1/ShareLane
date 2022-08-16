@@ -38,6 +38,7 @@ public class CartTest {
         browser.quit();
     }
 
+    @Test
     public void discount19Books() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver browser = new ChromeDriver();

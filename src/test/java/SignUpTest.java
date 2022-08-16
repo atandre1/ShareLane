@@ -6,11 +6,13 @@ import org.testng.annotations.Test;
 import static org.testng.Assert.assertEquals;
 
 public class SignUpTest {
+    String URL = "https://www.sharelane.com/cgi-bin/";
+
     @Test
     public void signUpPositive() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver browser = new ChromeDriver();
-        browser.get("https://www.sharelane.com/cgi-bin/register.py");
+        browser.get(URL + "register.py");
         browser.findElement(By.name("zip_code")).sendKeys("12345");
         browser.findElement(By.cssSelector("[value=Continue]")).click();
         browser.findElement(By.name("first_name")).sendKeys("John");
