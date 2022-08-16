@@ -7,7 +7,7 @@ import static org.testng.Assert.assertEquals;
 
 public class CartTest {
     @Test
-    public void Discount1Book() {
+    public void discount1Book() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver browser = new ChromeDriver();
         browser.get("https://www.sharelane.com/cgi-bin/register.py");
@@ -38,7 +38,7 @@ public class CartTest {
         browser.quit();
     }
 
-    public void Discount19Books() {
+    public void discount19Books() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver browser = new ChromeDriver();
         browser.get("https://www.sharelane.com/cgi-bin/register.py");
@@ -70,7 +70,7 @@ public class CartTest {
     }
 
     @Test
-    public void Discount20Books() {
+    public void discount20Books() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver browser = new ChromeDriver();
         browser.get("https://www.sharelane.com/cgi-bin/register.py");
@@ -102,7 +102,7 @@ public class CartTest {
     }
 
     @Test
-    public void Discount49Books() {
+    public void discount49Books() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver browser = new ChromeDriver();
         browser.get("https://www.sharelane.com/cgi-bin/register.py");
@@ -134,7 +134,7 @@ public class CartTest {
     }
 
     @Test
-    public void Discount50Books() {
+    public void discount50Books() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver browser = new ChromeDriver();
         browser.get("https://www.sharelane.com/cgi-bin/register.py");
@@ -166,7 +166,7 @@ public class CartTest {
     }
 
     @Test
-    public void Discount99Books() {
+    public void discount99Books() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver browser = new ChromeDriver();
         browser.get("https://www.sharelane.com/cgi-bin/register.py");
@@ -198,7 +198,7 @@ public class CartTest {
     }
 
     @Test
-    public void Discount100Books() {
+    public void discount100Books() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver browser = new ChromeDriver();
         browser.get("https://www.sharelane.com/cgi-bin/register.py");
@@ -230,7 +230,7 @@ public class CartTest {
     }
 
     @Test
-    public void Discount499Books() {
+    public void discount499Books() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver browser = new ChromeDriver();
         browser.get("https://www.sharelane.com/cgi-bin/register.py");
@@ -262,7 +262,7 @@ public class CartTest {
     }
 
     @Test
-    public void Discount500Books() {
+    public void discount500Books() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver browser = new ChromeDriver();
         browser.get("https://www.sharelane.com/cgi-bin/register.py");
@@ -294,7 +294,7 @@ public class CartTest {
     }
 
     @Test
-    public void Discount999Books() {
+    public void discount999Books() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver browser = new ChromeDriver();
         browser.get("https://www.sharelane.com/cgi-bin/register.py");
@@ -326,7 +326,7 @@ public class CartTest {
     }
 
     @Test
-    public void Discount1000Books() {
+    public void discount1000Books() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver browser = new ChromeDriver();
         browser.get("https://www.sharelane.com/cgi-bin/register.py");
@@ -358,7 +358,7 @@ public class CartTest {
     }
 
     @Test
-    public void Discount4999Books() {
+    public void discount4999Books() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver browser = new ChromeDriver();
         browser.get("https://www.sharelane.com/cgi-bin/register.py");
@@ -390,7 +390,7 @@ public class CartTest {
     }
 
     @Test
-    public void Discount5000Books() {
+    public void discount5000Books() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver browser = new ChromeDriver();
         browser.get("https://www.sharelane.com/cgi-bin/register.py");
@@ -422,7 +422,7 @@ public class CartTest {
     }
 
     @Test
-    public void Discount9999Books() {
+    public void discount9999Books() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver browser = new ChromeDriver();
         browser.get("https://www.sharelane.com/cgi-bin/register.py");
@@ -454,7 +454,7 @@ public class CartTest {
     }
 
     @Test
-    public void Discount10001Books() {
+    public void discount10001Books() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver browser = new ChromeDriver();
         browser.get("https://www.sharelane.com/cgi-bin/register.py");
